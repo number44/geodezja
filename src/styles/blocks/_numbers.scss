@@ -1,0 +1,19 @@
+@use '../composition/colors' as *;
+#numbers {
+	.wrapper {
+		background: $dark;
+	}
+}
+.number {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background: $dark;
+	color: $pale;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	svg {
+		width: 4ch;
+	}
+}

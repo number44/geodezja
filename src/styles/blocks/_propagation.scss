@@ -1,0 +1,26 @@
+body {
+	display: grid;
+	place-content: center;
+}
+.grandparent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30vw;
+	height: 30vw;
+	margin-inline: auto;
+	background: red;
+	padding: 5vw;
+	.parent {
+		padding: 5vw;
+		height: 100%;
+		width: 100%;
+		background: green;
+		.child {
+			height: 100%;
+			width: 100%;
+
+			background: blue;
+		}
+	}
+}

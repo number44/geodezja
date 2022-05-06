@@ -1,0 +1,86 @@
+@use '../composition/colors' as *;
+#hero {
+	background-position: center center;
+	background-size: cover;
+	height: fit-content;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	.wrapper {
+		flex: 1;
+		height: 100%;
+		place-content: center;
+	}
+}
+.hleft {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	text-transform: uppercase;
+	h1 {
+		line-height: var(--space-2xl);
+
+		@media (max-width: 37.5em) {
+			font-size: var(--step-4);
+		}
+	}
+}
+.hright {
+	height: 100%;
+	flex: 1;
+	.carousel {
+		width: 100%;
+		padding-top: 66%;
+		position: relative;
+	}
+	.swiper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		top: 0;
+		height: 100%;
+		position: absolute;
+		max-width: 100%;
+	}
+	.slide {
+		height: 400px;
+		width: 600px;
+		background: cadetblue;
+	}
+	img {
+		opacity: 1;
+		min-width: 100%; /* needed so Firefox doesn't make img shrink to fit */
+		width: 100%; /* can't take this out either as it breaks Chrome */
+	}
+}
+
+.swiper-wrapper {
+	.swiper-slide {
+		background: cadetblue;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $pale;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.swiper-button {
+	color: $primary;
+	border: $primary;
+	fill: $primary;
+}
+.swiper-pagination-bullet {
+	background: white !important;
+	width: 0.8rem !important;
+	height: 0.8rem !important;
+	fill: $primary !important;
+	border: $primary solid 3px !important;
+}
+.swiper-pagination {
+}

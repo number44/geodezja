@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/src/styles/style.scss" />
+		<title>geodezja-geomap</title>
+	</head>
+	<body>
+		{{> header}}
+		<main class="wrapper page-content">
+			<div class="layout">
+				<h1>{{title}}</h1>
+				<h2>H2</h2>
+				<h3>H3</h3>
+				<h4>H4</h4>
+				<h5>H5</h5>
+				<h6>H6</h6>
+				<p>Paragraph : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat blanditiis, nemo tempore ducimus mollitia voluptates veritatis dolores in perferendis unde quaerat saepe illum facilis accusamus molestiae omnis repudiandae vel adipisci!</p>
+				<p>
+					<small>small</small>
+				</p>
+				<ul>
+					<li>list1</li>
+					<li>list2</li>
+					<li>list3</li>
+					<li>list4</li>
+				</ul>
+				<button class="btn btn-primary">Primary</button>
+				<button class="btn btn-second">Secondary</button>
+
+				<div class="contact-link">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+					</svg>
+					<span>Link</span>
+				</div>
+				<div class="link">
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+					</svg>
+					<span>Link</span>
+				</div>
+
+				<div class="grid-2 gap">
+					<figure>
+						<img src="https://images.pexels.com/photos/6317441/pexels-photo-6317441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+						<figcaption>https://images.pexels.com/photos/6317441/pexels-photo-6317441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940</figcaption>
+					</figure>
+					<figure>
+						<img src="https://images.pexels.com/photos/6317441/pexels-photo-6317441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+						<figcaption>https://images.pexels.com/photos/6317441/pexels-photo-6317441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940</figcaption>
+					</figure>
+				</div>
+				<br />
+				<figure>
+					<img src="https://images.pexels.com/photos/6317441/pexels-photo-6317441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+					<figcaption>https://images.pexels.com/photos/6317441/pexels-photo-6317441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940</figcaption>
+				</figure>
+				<br />
+
+				<img src="https://images.pexels.com/photos/6317441/pexels-photo-6317441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
+				<br />
+				<label for="name">
+					<span>Name</span>
+					<input placeholder="email" required type="text" name="name" autocomplete="off" />
+				</label>
+				<label for="name">
+					<span>Name</span>
+					<input placeholder="email" required type="text" name="name" autocomplete="off" />
+				</label>
+				<label for="name">
+					<span>Name</span>
+					<input placeholder="email" required type="text" name="name" autocomplete="off" />
+				</label>
+				<label for="textares">
+					<textarea name="textares" id="" cols="30" rows="10"></textarea>
+				</label>
+				<input type="submit" value="Submit" class="btn btn-primary flex-center mx-auto w-full text-center" />
+			</div>
+		</main>
+		{{> footer}}
+		<script type="module" src="/src/main.tsx"></script>
+	</body>
+</html>

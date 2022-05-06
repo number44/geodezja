@@ -1,0 +1,12 @@
+@use '../composition/colors' as *;
+
+#page-header {
+	padding-top: var(--space-3xl);
+	padding-bottom: var(--space-2xl);
+	background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: $primary;
+}

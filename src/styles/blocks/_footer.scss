@@ -1,0 +1,46 @@
+@use '../composition/colors' as *;
+@use '../composition/mixins' as *;
+
+footer {
+	display: grid;
+	margin-top: var(--space-3xl);
+	background: $primary;
+	color: $pale;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	text-transform: uppercase;
+
+	.wrapper {
+		gap: var(--space-2xl);
+		display: grid;
+		grid-template-columns: 1fr;
+		@include mq(tablet) {
+			grid-template-columns: 1fr 1fr;
+		}
+		@include mq(desktop) {
+			grid-template-columns: 1fr 1fr 2fr;
+		}
+		ul {
+			list-style: none;
+		}
+	}
+	.footer-info {
+		p:nth-child(1) {
+			margin-bottom: var(--space-2xs);
+		}
+	}
+}
+
+#footer-map {
+	height: calc(2 * var(--space-3xl));
+	background: #ddd;
+	display: none;
+	@include mq(tablet) {
+		display: inline-block !important;
+	}
+}
+
+.ts {
+	width: 100%;
+	background: purple;
+}

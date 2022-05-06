@@ -1,0 +1,54 @@
+@use '../composition/colors' as *;
+input[type='text'],
+select,
+textarea {
+	margin-top: var(--space-2xs);
+	width: 100%;
+	padding: var(--space-2xs) var(--space-xs);
+	margin: 8px 0;
+	display: inline-block;
+	border: inherit;
+	outline: inherit;
+	border-radius: 3px;
+	box-sizing: border-box;
+	border: $primary solid 2px;
+}
+label {
+	position: relative;
+
+	&:focus-within {
+		span {
+			transform: translateY(-2.3rem);
+			background: $primary;
+			color: white;
+		}
+	}
+	input:required:valid {
+	}
+	span {
+		display: none;
+		padding-left: 1rem;
+		padding-right: 1rem;
+		transition: transform ease-in-out 0.3s;
+		left: var(--space-xs);
+		position: absolute;
+		transform: translateY(-50%);
+		top: 50%;
+		background: white;
+		border-radius: 50px;
+		pointer-events: none;
+	}
+}
+textarea {
+	width: 100%;
+}
+input[type='submit'] {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// input[type='submit']:hover {
+// 	background-color: #45a049;
+// }

@@ -1,0 +1,48 @@
+.accordion {
+	.accordion-header {
+		display: flex;
+		align-items: center;
+		padding: 1rem;
+		justify-content: space-between;
+		cursor: pointer;
+		background: hsl(0, 0%, 95%);
+		font-size: larger;
+		transition: background ease-in-out 0.3s;
+		&:hover {
+			background: hsl(0, 0%, 90%);
+		}
+		span {
+			margin-right: 1rem;
+		}
+		svg {
+			height: 20px;
+			transform: rotate(180deg);
+			transition: transform ease-in-out 0.3s;
+		}
+	}
+	.accordion-body {
+		padding: 1rem;
+		border: solid hsl(0, 0%, 95%) 2px;
+
+		ul {
+			list-style: none;
+			li {
+				font-size: large;
+			}
+		}
+	}
+}
+
+.rotate {
+	transform: rotate(360deg) !important;
+}
+
+.hide-content {
+	height: 0px !important;
+	opacity: 0;
+	& > * {
+		visibility: hidden;
+		height: 0px !important;
+		opacity: 0 !important;
+	}
+}

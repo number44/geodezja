@@ -1,0 +1,30 @@
+@use './colors' as *;
+.contact-link {
+	display: flex;
+	align-items: center;
+	font-size: larger;
+
+	padding-right: var(--space-2xs);
+	cursor: pointer;
+	transition: all ease-in-out 0.3s;
+	text-transform: uppercase;
+
+	&:hover {
+		transform: scale(1.01);
+		color: $primary;
+		svg {
+			transform: scale(1.01);
+		}
+	}
+	line-height: 2;
+	svg {
+		transition: fill ease-in-out 0.3s;
+		height: 100%;
+		margin-block: auto;
+		height: 1.3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: var(--space-3xs);
+	}
+}

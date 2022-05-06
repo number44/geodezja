@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/src/styles/style.scss" />
+		<title>geodezja-geomap</title>
+	</head>
+	<body>
+		{{> header}}
+		<main id="scroll-container" class="scroll-container">
+			<section id="hero">
+				<div class="wrapper grid-2">
+					<div class="hleft">
+						<small>geomet.com.pl</small>
+						<h1>Usługi geodezyjne</h1>
+						<div class="main-btn">
+							<div class="btn btn-primary" aria-disabled="true">
+								<span>O nas</span>
+								<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="hright">
+						<div class="carousel">
+							<div class="swiper">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper">
+									<!-- Slides -->
+									<div class="swiper-slide">
+										<img src="/files/g1.jpg" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="/files/g2.jpg" alt="" />
+									</div>
+									<div class="swiper-slide">
+										<img src="/files/g3.jpg" alt="" />
+									</div>
+								</div>
+								<!-- If we need pagination -->
+								<div class="swiper-pagination"></div>
+
+								<!-- If we need navigation buttons -->
+								<!-- <div class="swiper-button swiper-button-prev"></div>
+								<div class="swiper-button swiper-button-next"></div> -->
+
+								<!-- If we need scrollbar -->
+								<div class="swiper-scrollbar"></div>
+							</div>
+							<!-- <h1>Lorem, ipsum.</h1> -->
+							<!-- <div class="slide">
+								<h1>lorem</h1>
+								<img
+									src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+									alt=""
+									srcset="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80 2x"
+								/>
+							</div>
+							<div class="slide">
+								<img src="https://images.pexels.com/photos/11625055/pexels-photo-11625055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" srcset="https://images.pexels.com/photos/11625055/pexels-photo-11625055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 2x" />
+							</div>
+							<div class="slide">
+								<img src="https://images.pexels.com/photos/129544/pexels-photo-129544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="https://images.pexels.com/photos/129544/pexels-photo-129544.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940 2x" />
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="numbers">
+				<div class="wrapper grid-3">
+					<div class="number">
+						<h6>
+							Zadowoleni <br />
+							Klienci
+						</h6>
+						<h2 data-nr="42">0</h2>
+
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+							/>
+						</svg>
+					</div>
+					<div class="number">
+						<h6>
+							Zrealizowane <br />
+							Projekty
+						</h6>
+						<h2 data-nr="123">0</h2>
+
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+						</svg>
+					</div>
+					<div class="number">
+						<h6>
+							Lata <br />
+							Działalności
+						</h6>
+						<h2 data-nr="20">0</h2>
+
+						<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+						</svg>
+					</div>
+				</div>
+			</section>
+			<section id="about">
+				<div class="wrapper grid-2">
+					<div class="about-left">
+						<h3>Geomap</h3>
+						<br />
+						<p>KOMPLEKSOWE USŁUGI GEODEZYJNE:</p>
+						<ul>
+							<li>- dla przedsiębiorstw budowlanych</li>
+							<li>- dla biur projektowych</li>
+							<li>- dla klientów indywidualnych</li>
+						</ul>
+						<br />
+						<p>Działamy głownie na terenie woj. łódzkiego, ale mamy na swoim koncie realizacje na terenie całego kraju. Pracujemy także na terenach zamkniętych kolejowych i wojskowych.</p>
+						<br />
+
+						<p>Dowiedz się więcej o naszej ofercie :</p>
+						<button class="btn-second">
+							<span>Oferta</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+								<path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+							</svg>
+						</button>
+					</div>
+					<div class="about-right element">
+						<img src="/files/about.jpg" alt="" />
+					</div>
+				</div>
+			</section>
+			<section id="logos">
+				<div class="wrapper">
+					<div class="swiper2">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<img src="/logos/1.jpg" alt="" />
+							</div>
+
+							<div class="swiper-slide">
+								<img src="/logos/2.jpg" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="/logos/3.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="/logos/4.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="/logos/5.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="/logos/6.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="/logos/7.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="/logos/8.png" alt="" />
+							</div>
+							<div class="swiper-slide">
+								<img src="/logos/9.jpg" alt="" />
+							</div>
+						</div>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
+
+						<!-- If we need navigation buttons -->
+						<!-- <div class="swiper-button swiper-button-prev"></div>
+						<div class="swiper-button swiper-button-next"></div> -->
+
+						<!-- If we need scrollbar -->
+						<div class="swiper-scrollbar"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+		{{> footer}}
+		<script type="module" src="/src/main.tsx"></script>
+	</body>
+</html>

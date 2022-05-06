@@ -1,0 +1,21 @@
+@use '../composition/colors' as *;
+#logos {
+	margin-top: var(--space-2xl);
+	padding-top: var(--space-xl);
+	padding-bottom: var(--space-xl);
+
+	background: white;
+	.wrapper {
+		// overflow: hidden;
+	}
+	.swiper-pagination {
+		transform: translateY(var(--space-m));
+	}
+	.swiper-wrapper {
+		display: flex;
+		align-items: center;
+	}
+	.swiper-slide {
+		background: white;
+	}
+}

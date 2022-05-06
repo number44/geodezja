@@ -1,0 +1,56 @@
+/**
+ * WRAPPER
+ * Sets a max width, adds a consistent gutter and horizontally
+ * centers the contents
+ */
+@use './spaces';
+@use './mixins' as *;
+
+.wrapper {
+	width: 90vw;
+	width: clamp(16rem, 90vw, 70rem);
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	position: relative;
+}
+
+.layout {
+	display: grid;
+	grid-template-columns: repeat(1fr);
+	gap: auto var(--space-2xl);
+}
+
+.grid-2 {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	@media (min-width: 37.5em) and (orientation: landscape) {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+}
+.grid-3 {
+	display: grid;
+	gap: auto var(--space-2xl);
+	grid-template-columns: repeat(1, 1fr);
+	@media (min-width: 37.5em) and (orientation: landscape) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+.grid-4 {
+	min-height: 100px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	@media (min-width: 37.5em) and (orientation: landscape) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@include mq(desktop) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.test-w {
+	width: 30em;
+	background: goldenrod;
+	height: 10em;
+}

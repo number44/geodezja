@@ -1,0 +1,113 @@
+@use '../composition/colors' as *;
+.main-btn {
+	cursor: pointer;
+	position: relative;
+}
+.home-page-btn {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	// pointer-events: none;
+}
+.btn {
+	margin-top: var(--space-s);
+	margin-bottom: var(--space-s);
+
+	padding: var(--space-2xs) var(--space-m);
+	background: $primary;
+	color: $lightpale;
+	text-transform: uppercase;
+	text-rendering: optimizeSpeed;
+	font-weight: 700;
+	border: inherit;
+	border-radius: 0.1rem;
+	transition: color 0.3s ease-in-out, background 0.5s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	filter: drop-shadow(0px 0px 0.1rem $primary);
+	cursor: pointer;
+	span {
+		white-space: nowrap;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	svg {
+		height: 100%;
+		margin-left: var(--space-2xs);
+		height: 1.3rem;
+	}
+	&:hover {
+		background: white;
+		color: $primary;
+		filter: drop-shadow(0px 0px 0.1rem $primary);
+
+		svg {
+			animation-name: btnAnim;
+			animation-duration: 0.8s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+	}
+}
+
+@keyframes btnAnim {
+	0% {
+		transform: translateX(0rem);
+	}
+	100% {
+		transform: translateX(0.3rem);
+	}
+}
+.btn-second {
+	margin-top: var(--space-s);
+	padding: var(--space-2xs) var(--space-m);
+	background: $pale;
+	color: $primary;
+	text-transform: uppercase;
+	text-rendering: optimizeSpeed;
+	font-weight: 700;
+	border: inherit;
+	border-radius: 0.1rem;
+	cursor: pointer;
+	transition: color 0.3s ease-in-out, background 0.5s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	span {
+		white-space: nowrap;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	svg {
+		height: 100%;
+		margin-left: var(--space-2xs);
+		height: 1.3rem;
+	}
+	&:hover {
+		background: white;
+		color: $primary;
+		svg {
+			animation-name: btnAnim;
+			animation-duration: 0.8s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+	}
+}
+
+.btns {
+	display: flex;
+
+	.btn:nth-child(even) {
+		margin-left: 1ch;
+	}
+}

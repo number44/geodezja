@@ -1,0 +1,13 @@
+[35mlanding:build: [0mcache hit, replaying output [2mdb19b3c2f9990578[0m
+[35mlanding:build: [0m
+[35mlanding:build: [0m> landing@0.0.0 build
+[35mlanding:build: [0m> tsc && vite build
+[35mlanding:build: [0m
+[35mlanding:build: [0mvite v2.9.6 building for production...
+[35mlanding:build: [0mtransforming...
+[35mlanding:build: [0m✓ 374 modules transformed.
+[35mlanding:build: [0mrendering chunks...
+[35mlanding:build: [0mdist/assets/favicon.34672aac.svg   4.81 KiB
+[35mlanding:build: [0mdist/index.html                    19.91 KiB
+[35mlanding:build: [0mdist/assets/index.313f17e4.css     33.39 KiB / gzip: 8.39 KiB
+[35mlanding:build: [0mdist/assets/index.d298fc40.js      340.84 KiB / gzip: 110.63 KiB

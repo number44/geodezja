@@ -1,0 +1,29 @@
+@use './colors' as *;
+
+.link {
+	display: flex;
+	align-items: center;
+	font-size: larger;
+	align-self: flex-start;
+	padding-right: var(--space-2xs);
+	cursor: pointer;
+	transition: all ease-in-out 0.3s;
+	text-transform: uppercase;
+	transform: scale(1);
+	opacity: 0.9;
+	color: $primary;
+
+	&:hover {
+		opacity: 1;
+
+		transform: scale(1.01);
+
+		color: $primary;
+	}
+	line-height: 2;
+	svg {
+		transition: fill ease-in-out 0.3s;
+		height: 1.3rem;
+		margin-right: var(--space-3xs);
+	}
+}
