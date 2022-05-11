@@ -1,5 +1,5 @@
 import anime, { AnimeInstance } from 'animejs';
-import { throttle, detectScroll } from 'utils';
+import { throttle, detectScroll } from './utils';
 import jump from 'jump.js';
 import detect from './scripts/detect';
 const indicator = document.querySelector('.target') as HTMLDivElement;

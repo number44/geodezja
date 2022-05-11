@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Photos } from 'ui';
+import Photos from '../ui/Photos/Photos';
 interface ImageI {
 	id: number;
 	src: string;
