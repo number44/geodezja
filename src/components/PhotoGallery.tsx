@@ -6,11 +6,7 @@ interface ImageI {
 	alt: string;
 }
 
-const imagesUrls = [
-	'https://d33wubrfki0l68.cloudfront.net/dd23708ebc4053551bb33e18b7174e73b6e1710b/dea24/static/images/wallpapers/shared-colors@2x.png',
-	'https://d33wubrfki0l68.cloudfront.net/49de349d12db851952c5556f3c637ca772745316/cfc56/static/images/wallpapers/bridge-02@2x.png',
-	'https://d33wubrfki0l68.cloudfront.net/594de66469079c21fc54c14db0591305a1198dd6/3f4b1/static/images/wallpapers/bridge-01@2x.png',
-];
+const imagesUrls = ['/gallery/IMG_20220411_073703-min.jpg', '/gallery/IMG_20220411_074442-min.jpg', '/gallery/IMG_20220411_083747-min.jpg', '/gallery/IMG_20220411_083828-min.jpg', '/gallery/IMG_20220411_084128-min.jpg', '/gallery/IMG_20220411_084232-min.jpg', '/gallery/IMG_20220411_104438-min.jpg'];
 const images: ImageI[] = [
 	{
 		id: 0,
@@ -24,9 +20,29 @@ const images: ImageI[] = [
 	},
 
 	{
-		id: 3,
+		id: 2,
 		src: imagesUrls[2],
 		alt: imagesUrls[2],
+	},
+	{
+		id: 3,
+		src: imagesUrls[3],
+		alt: imagesUrls[3],
+	},
+	{
+		id: 4,
+		src: imagesUrls[4],
+		alt: imagesUrls[4],
+	},
+	{
+		id: 5,
+		src: imagesUrls[5],
+		alt: imagesUrls[5],
+	},
+	{
+		id: 6,
+		src: imagesUrls[6],
+		alt: imagesUrls[6],
 	},
 ];
 interface PropsI {

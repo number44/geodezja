@@ -5,8 +5,8 @@
 	padding-bottom: var(--space-xl);
 
 	background: white;
+	overflow: hidden;
 	.wrapper {
-		// overflow: hidden;
 	}
 	.swiper-pagination {
 		transform: translateY(var(--space-m));
