@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import handlebars from 'vite-plugin-handlebars';
+import { resolve } from 'path';
 
 const pageData = {
 	'/index.html': {
@@ -42,4 +43,17 @@ export default defineConfig({
 			partialDirectory: 'partials',
 		}),
 	],
+	build: {
+		rollupOptions: {
+			input: {
+				main: resolve(__dirname, 'index.html'),
+				offer: resolve(__dirname, 'offer.html'),
+				experience: resolve(__dirname, 'experience.html'),
+				gallery: resolve(__dirname, 'gallery.html'),
+				contact: resolve(__dirname, 'contact.html'),
+				single: resolve(__dirname, 'single.html'),
+				work: resolve(__dirname, 'work.html'),
+			},
+		},
+	},
 });
