@@ -28,3 +28,21 @@
 		margin-right: var(--space-3xs);
 	}
 }
+.qr {
+}
+.contact-map-link {
+	display: grid;
+	grid-template-columns: 2rem 1fr;
+	padding-block: var(--space-3xs);
+	transition: transform ease-in-out 0.3s;
+	&:hover {
+		color: $primary;
+		transform: scale(1.05);
+	}
+	svg {
+		height: 1.5rem;
+	}
+	span {
+		max-width: 30ch;
+	}
+}

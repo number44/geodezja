@@ -25,7 +25,9 @@ const Photos = ({ images }: PropsI) => {
 		<>
 			<div className="photos-grid">
 				{images?.map((image) => (
-					<Photo selectId={selectId} key={image.id} image={image} />
+					<div key={image.id}>
+						<Photo selectId={selectId} image={image} />
+					</div>
 				))}
 			</div>
 			<div className="imagesxxx">
@@ -36,8 +38,3 @@ const Photos = ({ images }: PropsI) => {
 };
 
 export default Photos;
-interface ImageI {
-	id: number;
-	src: string;
-	alt: string;
-}

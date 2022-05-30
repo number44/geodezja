@@ -19,6 +19,14 @@
 	justify-content: center;
 	align-items: flex-start;
 	text-transform: uppercase;
+	.logo {
+		margin-top: var(--space-s);
+		width: 40ch;
+	}
+	h6 {
+		margin-top: var(--space-m);
+		color: $primary;
+	}
 	h1 {
 		line-height: var(--space-2xl);
 

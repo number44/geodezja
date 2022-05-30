@@ -48,8 +48,3 @@ const LightShow = ({ images, selectedId, open, onClose }: PropsI) => {
 };
 
 export default LightShow;
-interface ImageI {
-	id: number;
-	src: string;
-	alt: string;
-}

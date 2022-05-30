@@ -44,3 +44,17 @@ footer {
 	width: 100%;
 	background: purple;
 }
+
+.footer-link {
+	color: $pale;
+
+	display: grid;
+	grid-template-columns: 2rem 1fr;
+	gap: var(--space-2xs);
+	padding-block: var(--space-3xs);
+}
+.footer-link:hover {
+	color: white !important;
+}
+.pin-link {
+}

@@ -93,7 +93,8 @@ const doSomething = async (nr: number) => {
 	}
 };
 
-import Swiper, { EffectCube, Navigation, Pagination } from 'swiper';
+import Swiper, { EffectCube, Navigation, Pagination, Autoplay } from 'swiper';
+Swiper.use([Autoplay]);
 
 // import styles bundle
 import 'swiper/css';
@@ -106,7 +107,7 @@ const swiper = new Swiper('.swiper', {
 	loop: true,
 	effect: 'cube',
 	autoplay: {
-		delay: 1000,
+		delay: 3000,
 	},
 	modules: [Pagination, EffectCube],
 	cubeEffect: {
@@ -136,7 +137,6 @@ const swiper2 = new Swiper('.swiper2', {
 	spaceBetween: 10,
 	loop: true,
 	autoplay: {
-		delay: 2500,
 		disableOnInteraction: false,
 	},
 	modules: [Pagination],

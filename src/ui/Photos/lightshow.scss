@@ -81,9 +81,10 @@ $primary: hsl(101, 91%, 27%);
 	transform-origin: 50% 50%;
 }
 
-img {
+.slide-image {
 	position: absolute;
-	max-width: 100vw;
+	max-width: 900px;
+	width: 100%;
 }
 
 .refresh {
@@ -101,6 +102,5 @@ img {
 	cursor: pointer;
 }
 .imagesxxx {
-	background: red !important;
 	display: none !important;
 }

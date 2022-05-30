@@ -22,12 +22,13 @@ const detect = () => {
 					if (el.dataset.nr) {
 						el.innerHTML = el.dataset.nr.toString();
 						const animeObj: animeObjI = {
-							nr: 0,
+							nr: 1,
 						};
 						anime({
 							targets: animeObj,
 							nr: el.dataset.nr,
 							duration: 2000,
+							easing: 'linear',
 							update: () => {
 								if (el.dataset.nr) {
 									el.innerHTML = Math.floor(animeObj.nr).toString();

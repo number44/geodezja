@@ -1,0 +1,30 @@
+@use '../composition/colors' as *;
+
+.socials {
+	display: flex;
+	flex-shrink: 1;
+	.social {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1rem;
+		transition: all ease-in-out 0.3s;
+		&:hover {
+			svg {
+				stroke: $primary;
+				transform: scale(1.1) rotate(10deg);
+				path {
+					fill: $primary;
+				}
+			}
+		}
+		svg {
+			transition: transform ease-in-out 0.3s;
+			stroke: $dark;
+			width: 1.5rem;
+			path {
+				fill: $dark;
+			}
+		}
+	}
+}

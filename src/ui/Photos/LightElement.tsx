@@ -97,6 +97,7 @@ export const LightElement = ({ onClose, selectedId, images, show }: PropsI) => {
 		<>
 			<AnimatePresence initial={false} custom={direction}>
 				<motion.img
+					className="slide-image"
 					key={page}
 					src={images[imageIndex].src}
 					custom={direction}

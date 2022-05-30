@@ -26,6 +26,9 @@
 @use './blocks/page';
 @use './blocks/card';
 @use './blocks/contactinfo';
+@use './blocks/social';
+@use './blocks/hours';
+
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -45,7 +48,8 @@ body {
 	background-size: cover;
 	overflow-x: hidden;
 }
-
+.cp {
+}
 main {
 	// background: rgba(#fff, 0.6);
 	background-attachment: fixed;

@@ -1,0 +1,24 @@
+#hours {
+	margin-top: var(--space-l);
+
+	h1 {
+		font-size: 3rem;
+		line-height: 1.8;
+	}
+}
+.reset-block-margin {
+	margin-bottom: 0px !important;
+}
+
+.hours {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 20ch);
+	gap: var(--space-2xs);
+	.hour {
+		width: 100%;
+		h6 {
+			line-height: inherit;
+			margin-bottom: inherit;
+		}
+	}
+}
