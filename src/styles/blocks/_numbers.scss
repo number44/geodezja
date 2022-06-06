@@ -18,10 +18,10 @@
 	}
 }
 .number {
+	padding-left: var(--space-l);
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	// background: $dark;
 	color: $pale;
 	padding-top: 3rem;
@@ -33,7 +33,7 @@
 		padding-left: var(--space-xs);
 		word-wrap: break-word;
 		max-width: 100%;
-
+		font-size: 6rem;
 		@media (max-width: 50em) {
 			font-size: 2.5rem;
 		}
