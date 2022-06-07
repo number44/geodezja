@@ -5,8 +5,7 @@
 	@media (min-width: 50em) {
 		min-height: 100vh;
 	}
-	display: none;
-
+	display: flex;
 	flex-direction: column;
 	position: relative;
 	.wrapper {
@@ -29,6 +28,7 @@
 	align-items: flex-start;
 	text-transform: uppercase;
 	@media (max-width: 37.5rem) {
+		margin-top: var(--space-m);
 		width: 90% !important;
 	}
 	.logo {
